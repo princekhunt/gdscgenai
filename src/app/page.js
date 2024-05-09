@@ -67,7 +67,6 @@ export default function Home() {
 
             </div>
           </div>
-
           <div className="links mob:py-3 flex justify-center items-center space-x-5">
 
             <Link href="https://www.linkedin.com/company/gdscppsu"><div className="cursor-pointer linkedin">
@@ -80,6 +79,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
       {/* <div className="bg-gray-100 min-h-screen">
       <BadgeComponent    />
     </div> */}
