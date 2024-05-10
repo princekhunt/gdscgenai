@@ -23,16 +23,15 @@ function TableRow({ participant }) {
 
             <td className="Institution mob:hidden relative p-3">
                 <div
-                    className={`m-auto w-fit rounded-3xl px-2 py-1 text-center ${participant["Institution"] ==
-                        "P P Savani University - Surat"
+                    className={`m-auto w-fit rounded-3xl px-2 py-1 text-center ${participant["All 3 Pathways Completed - Yes or No"] ==
+                        "Yes"
                         ? "bg-green-200 text-green-600"
-                        : "bg-green-200 text-green-600"
+                        : "bg-blue-200 text-blue-600"
                         }`}
                 >
-                    {participant["Institution"] ==
-                        "P P Savani University - Surat"
-                        ? "PPSU"
-                        : "PPSU"}
+                    <a href={participant["Google Cloud Skills Boost Profile URL"]} target="_blank" rel="noreferrer">
+                        Public Profile
+                        </a>
                 </div>
             </td>
 
@@ -41,7 +40,7 @@ function TableRow({ participant }) {
                 <div
                     className={`m-auto w-fit rounded-3xl px-5 py-1 text-center ${participant["All 3 Pathways Completed - Yes or No"] == "Yes"
                         ? "bg-green-200 text-green-600"
-                        : "bg-yellow-200 text-yellow-600"
+                        : "bg-red-200 text-red-600"
                         }`}
                 >
                     {participant["All 3 Pathways Completed - Yes or No"] == "Yes"
@@ -51,27 +50,45 @@ function TableRow({ participant }) {
             </td>
 
             <td className="Prompt Design in Vertex AI Completion mob:hidden p-3 text-center">
-                {participant["Prompt Design in Vertex AI Completion"]}
+                <div 
+                    className={`m-auto w-fit rounded-3xl px-5 py-1 text-center ${participant["Prompt Design in Vertex AI Completion"] == 1
+                        ? "bg-green-200 text-green-600"
+                        : "bg-red-200 text-red-600"
+                        }`}
+                >
+                    {participant["Prompt Design in Vertex AI Completion"] == 1
+                        ? "Completed"
+                        : "Not Completed"}
+                </div>
+
             </td>
 
             <td className="Develop GenAI Apps with Gemini and Streamlit Completion mob:hidden p-3 text-center">
-                {participant["Develop GenAI Apps with Gemini and Streamlit Completion"]}
+                <div
+                    className={`m-auto w-fit rounded-3xl px-5 py-1 text-center ${participant["Develop GenAI Apps with Gemini and Streamlit Completion"] == 1
+                        ? "bg-green-200 text-green-600"
+                        : "bg-red-200 text-red-600"
+                        }`}
+                >
+                    {participant["Develop GenAI Apps with Gemini and Streamlit Completion"] == 1
+                        ? "Completed"
+                        : "Not Completed"}
+                </div>
             </td>
 
             <td className="Gen AI Arcade Game Completion mob:hidden p-3 text-center">
-                {participant["Gen AI Arcade Game Completion"]}
+                <div
+                    className={`m-auto w-fit rounded-3xl px-5 py-1 text-center ${participant["Gen AI Arcade Game Completion"] == 1
+                        ? "bg-green-200 text-green-600"
+                        : "bg-red-200 text-red-600"
+                        }`}
+                >
+                    {participant["Gen AI Arcade Game Completion"] == 1
+                        ? "Completed"
+                        : "Not Completed"}
+                </div>
+
             </td>
-
-
-            {/* <td className="Enrolment_Date_Time p-3">
-                {participant["Enrolment Date & Time"]}
-            </td> */}
-
-            {/* <td className="Enrolment_Status p-3">{participant["Enrolment Status"]}</td> */}
-
-            {/* <td className="Profile_URL p-3">
-        {participant["Google Cloud Skills Boost Profile URL"]}
-      </td> */}
 
 
 

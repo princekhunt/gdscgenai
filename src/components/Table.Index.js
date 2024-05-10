@@ -83,7 +83,7 @@ function TableIndex() {
           <tr className='text-center '>
             <td className="rounded-ss-lg w-80 p-2 border-r-2 border-r-gray-300">Name</td>
             <td className="p-2 border-r-2 border-r-gray-300">Redemption Status</td>
-            <td className="mob:hidden p-2 px-10 border-r-2 border-r-gray-300">Institution</td>
+            <td className="mob:hidden p-2 px-10 border-r-2 border-r-gray-300">Cloud Skill Boost Profile</td>
             <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">All 3 Pathways Completed</td>
             <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Prompt Design in Vertex AI Completion</td>
             <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Develop GenAI Apps with Gemini and Streamlit Completion</td>
