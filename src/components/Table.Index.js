@@ -53,7 +53,7 @@ function TableIndex() {
           completion={EligibleforSwags}
         /> */}
         <h1 className="text-center"><b>{EligibleforSwags} Techies, who completed all pathways are right now,</b></h1>
-        <img width="30%" className="m-auto" src="https://c.tenor.com/kGFp0e2m_RsAAAAd/tenor.gif" alt="level" />
+        <img width="30%" className="m-auto" src="https://c.tenor.com/c7S5r5Zygs8AAAAd/tenor.gif" alt="level" />
         <div className="info flex mob:flex-col mob:justify-center mob:items-center mob:space-y-10 mob:p-5 justify-evenly space-x-3 mob:space-x-0">
           <div className="eligibleforswag w-fit mob:w-full h-20 p-5 space-x-5 rounded-lg flex flex-row justify-evenly mob:justify-between items-center bg-green-50 shadow-lg shadow-green-300/30 border border-green-200">
             <p className="text-center mob:text-start text-sm text-green-400">No of Eligible <br /> Participants for swags</p>
