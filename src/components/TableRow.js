@@ -30,7 +30,9 @@ function TableRow({ participant }) {
                         }`}
                 >
                     <a href={participant["Google Cloud Skills Boost Profile URL"]} target="_blank" rel="noreferrer">
-                        Public Profile
+                        {
+                            participant["Profile URL Status"] === "All Good" ? "Public Profile" : participant["Profile URL Status"]
+                        }
                         </a>
                 </div>
             </td>

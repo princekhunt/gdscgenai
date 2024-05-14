@@ -1,0 +1,40 @@
+{
+    // ? Output to Data.json File
+    "ProfileElement": "Google Cloud Skills Boost Profile URL",
+
+    // ? IF the Profile URL is valid or not
+    "ProfileStatusElement": "Profile URL Status",
+
+    // ? IF All Badges are completed so Yes otherwise No
+    "AllBadgesElement": "All 3 Pathways Completed - Yes or No",
+
+    "BadgeElements": [
+        {
+            // ? Output of the badge in Data.json file
+            "Element": "Prompt Design in Vertex AI Completion",
+            // ? Access string to get the badge status from the profile url
+            "AcsessString": "Prompt Design in Vertex AI"
+        },
+        {
+            "Element": "Develop GenAI Apps with Gemini and Streamlit Completion",
+            "AcsessString": "Develop GenAI Apps with Gemini and Streamlit"
+        },
+        {
+            "Element": "Gen AI Arcade Game Completion",
+            "AcsessString": "Level 3: GenAIus Registries"
+        }
+    ],
+
+    // ? Backup the data file before running the script
+    "getBackup": true,
+
+    // ? Ignore Pathways that Already have all badges completed
+    "IgnoreCompleted": true,
+
+    // ? Check Profile Status even if all badges are completed
+    "ForceCheckProfileStatus": false,
+
+    // Data file to store the profile urls & Username data
+    // ! Before running the script, make sure to backup the data file
+    "DataFile": "public/data.json"
+}
